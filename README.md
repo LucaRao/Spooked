@@ -41,7 +41,7 @@ CREATE TABLE "public"."reports" (
   CONSTRAINT "reports_pkey" PRIMARY KEY ("id")
 );
 
-##´¥·¢Æ÷
+##ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 -- Updates a row in public.posts
 create or replace function public.handle_updated_at() 
 returns trigger as $$
@@ -74,5 +74,8 @@ create trigger on_auth_user_created
   after insert on auth.users
   for each row execute procedure public.handle_new_user();
 
+
+  
+## npm i
 ## run
 npm run dev -- --open
